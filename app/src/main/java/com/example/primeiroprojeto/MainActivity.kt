@@ -14,8 +14,32 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        Log.i("tagInfo","MainActivity em onCreate")
     }
 
+    override fun onStart() {
+        super.onStart()
+        Log.i("tagInfo","MainActivity::Entrada em onStart")
+    }
+    override fun onResume() {
+        super.onResume()
+        Log.i("tagInfo","MainActivity::Entrada em onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.i("tagInfo","MainActivity::Entrada em onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.i("tagInfo","MainActivity::Entrada em onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.i("tagInfo","MainActivity::Entrada em onDestroy")
+    }
     //metodo que e chamado ao clicar no botao,foi definido no atributo do botao onClick
     fun enviarMensagem(view: View){
         //cria um log de informacao, classe log, chamo de i (info), a tag dele e difinida assim como a msg (Nao faz nada alem de informar o click do botao)
@@ -39,5 +63,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
         //agora a segunda activity que ira receber a informacao da primeira intent no caso no arquivo da outra activity
         //foi criado uma variavel dentro da funcao onCreate dessa outra activity
+    }
+    fun acessaTelaDois(view: View){
+        Log.i("btnClicado","Chamada para tela dois")
+        val intent = Intent(this, pgRecebeMensagemActivity::class.java)
+        startActivity(intent)
     }
 }

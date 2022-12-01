@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">PrimeiroProjeto</string>
     <string name="insira_uma_mensagem">Insira uma mensagem</string>
+    <string name="mensagem_recebida">Mensagem recebida</string>
     <string name="enviar">Enviar</string>
+    <string name="btnDois">BtnDois</string>
+    <string name="btnTelaUm">Acessar tela dois</string>
 </resources>

@@ -2,6 +2,8 @@ package com.example.primeiroprojeto
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.widget.TextView
 
 class pgRecebeMensagemActivity : AppCompatActivity() {
@@ -15,6 +17,8 @@ class pgRecebeMensagemActivity : AppCompatActivity() {
         val textView = findViewById<TextView>(R.id.textViewMensagem).apply {
             text = mensagemRecebida
         }
-
+    }
+    fun observaBtnDois(view: View) {
+        Log.i("TagBtnDois","Observa Btn Dois")
     }
 }
