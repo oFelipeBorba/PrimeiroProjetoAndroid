@@ -5,4 +5,5 @@
     <string name="enviar">Enviar</string>
     <string name="btnDois">BtnDois</string>
     <string name="btnTelaUm">Acessar tela dois</string>
+    <string name="btnExibidor">Exibir outro botão</string>
 </resources>

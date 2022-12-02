@@ -26,7 +26,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".pgRecebeMensagemActivity"
+            android:name=".PgRecebeMensagemActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity">
             <meta-data
