@@ -6,4 +6,11 @@
     <string name="btnDois">BtnDois</string>
     <string name="btnTelaUm">Acessar tela dois</string>
     <string name="btnExibidor">Exibir outro botão</string>
+    <string name="btnFindBreja">Buscar por tipo de cerveja</string>
+    <string name="tvShowBreja"></string>
+    <string-array name="spnBrejas">
+        <item>Pilsen</item>
+        <item>Escura</item>
+        <item>Trigo</item>
+    </string-array>
 </resources>

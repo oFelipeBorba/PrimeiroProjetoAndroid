@@ -6,10 +6,12 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.Spinner
 import android.widget.TextView
 
 class PgRecebeMensagemActivity : AppCompatActivity() {
 
+    val brejaExpert = BrejaExpert()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +30,25 @@ class PgRecebeMensagemActivity : AppCompatActivity() {
 
     private fun configurarListeners() {
         configurarBtnVoltar()
+    }
+
+    fun recebeBrejas(view: View){
+        val spinner = findViewById<Spinner>(R.id.spnBrejas) //crio a variavel que ta atrelada ao spinner
+        val textView = findViewById<TextView>(R.id.tvShowBreja) //crio a variavel que ta atrelada ao textView
+        val valorSpinner = spinner.selectedItem //crio a variavel que recebe o valor selecionaod no spinner, chamando ele.selectedItem
+        val repassaBrejaExpert = brejaExpert.recebeBreja(valorSpinner.toString())
+        textView.apply { //aplico no textView um text com o valorSpinner(na vdd uma lista referente ao valor selecionado criada em BrejaExpert) passado para string
+            text = repassaBrejaExpert.joinToString(
+                //apenas crio um output personalizado, poderia deixar vazio
+                prefix = "[",
+                separator = ":",
+                postfix = "]",
+                limit = 3,
+                truncated = "...",
+                transform = { it.uppercase() }
+                    )
+        }
+
     }
 
     fun configuraBtnExibidor(view: View) {
