@@ -1,6 +1,7 @@
 package com.example.primeiroprojeto
 
 import android.content.Intent
+import android.content.Intent.EXTRA_TEXT
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 //variavel constante que e enviada no putExtra, passo o nome do pacote como identificador unico ?!
 const val EXTRA_MESSAGE = "com.example.primeiroprojeto.MENSAGEM"
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,6 +59,18 @@ class MainActivity : AppCompatActivity() {
         val editText = findViewById<EditText>(R.id.etMensagem)
         //crio uma variavel para armazenar a mensagem - e capturo o texto inserido dentro da view editText (passando para string)
         val mensagem = editText.text.toString()
+
+        //-----------------------------------------------------------------ACTION_SEND - INTENT----------------------------------------------------------------
+//        //Criando uma intent para enviar uma mensagem (SMS, WPP, EMAIL)
+//        val intent = Intent(Intent.ACTION_SEND).apply {
+//            type = "text/plain"
+//            putExtra(EXTRA_TEXT,mensagem)
+//        }
+//        if (intent.resolveActivity(packageManager) != null) {
+//            startActivity(intent)
+//        }
+        //----------------------------------------------------------------------------------------------------------------------------------------------------
+
         //criando a intencao de realizar uma acao, passo para uma variavel
         //dentro do obj intent que esta sendo criado e precisamos passar a referencia da activity que estamos trabalhando (this) e a activity que vamos interagir (a pgRecebeMensagemActivity)
         //algumas classes do android ainda funcionam em java, entao precisamos converter essa class kotlin p java com ::class.java
