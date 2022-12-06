@@ -96,4 +96,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, StopwatchActivity::class.java)
         startActivity(intent)
     }
+
+    fun onClickGoMaiaParty(view: View) {
+        val intent = Intent(this, MaiaPartyActivity::class.java)
+        startActivity(intent)
+    }
 }

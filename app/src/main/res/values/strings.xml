@@ -14,9 +14,14 @@
         <item>Trigo</item>
     </string-array>
 
-    <string name="btnGoStopwatch">Acessar stopwatch</string>
+    <string name="btnMaiaParty">Acessar MaiaParty</string>
+
+    <string name="btnGoStopwatch">Acessar Stopwatch</string>
 
     <string name="btnStart">Start</string>
     <string name="btnStop">Stop</string>
     <string name="btnReset">Reset</string>
+    <string name="happy_birthday_maia">Happy Birthday, Maia!</string>
+    <string name="from_felipe">From Felipe.</string>
+    <string name="foto_de_um_cupcake">Foto de um cupcake</string>
 </resources>

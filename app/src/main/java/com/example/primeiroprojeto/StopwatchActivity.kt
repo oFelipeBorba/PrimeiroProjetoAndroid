@@ -33,10 +33,8 @@ class StopwatchActivity : AppCompatActivity() {
         segundos = 0
     }
 
-
-    fun runTimer(){
+    private fun runTimer(){
         val tvTimer : TextView = findViewById(R.id.tvStopwatch)
-
         Handler(Looper.getMainLooper()).postDelayed(object : Runnable {
             override fun run() {
                 var horas: Int = segundos / 3600
@@ -51,9 +49,7 @@ class StopwatchActivity : AppCompatActivity() {
                 return
             }
         }, 500)
-
-
-            }
+    }
 
     companion object {
         private const val TAG = "tagInfo"
