@@ -91,4 +91,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, PgRecebeMensagemActivity::class.java)
         startActivity(intent)
     }
+
+    fun onClickGoStopwatch(view: View) {
+        val intent = Intent(this, StopwatchActivity::class.java)
+        startActivity(intent)
+    }
 }

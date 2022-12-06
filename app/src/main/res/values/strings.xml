@@ -13,4 +13,10 @@
         <item>Escura</item>
         <item>Trigo</item>
     </string-array>
+
+    <string name="btnGoStopwatch">Acessar stopwatch</string>
+
+    <string name="btnStart">Start</string>
+    <string name="btnStop">Stop</string>
+    <string name="btnReset">Reset</string>
 </resources>
