@@ -16,7 +16,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="@string/insira_uma_mensagem"
+        android:hint="@string/insira_uma_mensagem"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,9 +65,22 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/btnMaiaParty"
         android:onClick="onClickGoMaiaParty"
+        android:text="@string/btnMaiaParty"
         app:layout_constraintBottom_toTopOf="@+id/btnGoStopwatch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnGoMachineList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onClickGoMachineList"
+        android:text="@string/acessar_machinelist"
+        app:layout_constraintBottom_toTopOf="@+id/btnMaiaParty"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

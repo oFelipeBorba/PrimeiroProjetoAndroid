@@ -21,7 +21,19 @@
     <string name="btnStart">Start</string>
     <string name="btnStop">Stop</string>
     <string name="btnReset">Reset</string>
+
     <string name="happy_birthday_maia">Happy Birthday, Maia!</string>
     <string name="from_felipe">From Felipe.</string>
     <string name="foto_de_um_cupcake">Foto de um cupcake</string>
+
+    <string name="acessar_machinelist">Acessar MachineList</string>
+    <string name="adicione_novos_equipamentos_no_bot_o_ao_lado">Adicione novos equipamentos com o botão ao lado -></string>
+    <string name="bot_o_que_adiciona_novas_maquinas">Botão que adiciona novas maquinas</string>
+    <string name="veja_abaixo_a_lista_de_m_quinas_adicionadas">Veja abaixo a lista de máquinas adicionadas:</string>
+    <string name="informe_o_nome_da_m_quina">Informe o nome da máquina</string>
+    <string name="informe_a_linha_de_produ_o">Informe a linha de produção</string>
+    <string name="informe_as_horas_de_parada">Informe as horas de parada</string>
+    <string name="salvar">Salvar</string>
+
+
 </resources>

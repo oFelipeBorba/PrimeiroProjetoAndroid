@@ -1,5 +1,6 @@
 package com.example.primeiroprojeto
 
+import android.app.Activity
 import android.content.Intent
 import android.content.Intent.EXTRA_TEXT
 import android.os.Bundle
@@ -99,6 +100,11 @@ class MainActivity : AppCompatActivity() {
 
     fun onClickGoMaiaParty(view: View) {
         val intent = Intent(this, MaiaPartyActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun onClickGoMachineList(view: View) {
+        val intent = Intent(this, MachineListActivity::class.java)
         startActivity(intent)
     }
 }
